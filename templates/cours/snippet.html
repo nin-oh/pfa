@@ -13,18 +13,18 @@
 		<!-- Blog Post -->
 		<div class="card m-auto">
 			<a href="{% url 'cours:detail' post.slug %}">
-				<img class="card-img-top" src="{{cours.image.url}}">
+				<img class="card-img-top" src="{{cour_s.image.url}}">
 			</a>
 			
 			<div class="card-body mt-2 mb-2">
 				<a href="{% url 'cours:detail' post.slug %}">
-					<h2 class="card-title">{{cours.title}}</h2>
+					<h2 class="card-title">{{cour_s.title}}</h2>
 				</a>
-				<p class="card-text">{{cours.body|safe|truncatechars:180}}</p>
+				<p class="card-text">{{cour_s.body|safe|truncatechars:180}}</p>
 				
 			</div>
 			<div class="card-footer text-muted">
-			  Updated on {{cours.date_updated}} by {{cours.author}}
+			  Updated on {{cour_s.date_updated}} by {{cour_s.author}}
 			</div>
 		</div>
 	</div>

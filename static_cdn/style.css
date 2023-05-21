@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	background-color: #008CBA;
+	background-color: blue;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -36,7 +36,7 @@ nav a {
 }
 
 .hero {
-	background-image: url(https://via.placeholder.com/150);
+	background-image: url('kids1.jpg');
 	background-size: cover;
 	background-position: center;
 	color: #fff;

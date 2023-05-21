@@ -2,37 +2,41 @@
 form {
     max-width: 600px;
     margin: 0 auto;
+    
   }
   
   form h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
+
   }
   
   form p {
     margin-bottom: 1rem;
+    
   }
   
+ 
   form input[type="text"],
-  form input[type="email"],
-  form input[type="password"] {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  border: none; /* Remove the border property */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 0 0 1px;
+}
   form small {
-    color: #888;
+    
     font-size: 0.8rem;
   }
   
   form button[type="submit"] {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.5rem;
@@ -49,7 +53,7 @@ form input[type="email"],
 form input[type="password"] {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #ccc; /* Add a border */
+  border: 1px solid ;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -58,19 +62,17 @@ h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid ;
     padding-bottom: 1rem;
   }
-* {
-    background-color: #f9f9f9; /* Add a light gray background color */
-  }
+
 h2 {
     background-color: #007bff; /* Add a blue background color */
-    color: #fff; /* Set the text color to white */
+    color: white; /* Set the text color to white */
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid ;
     padding-bottom: 1rem;
   }
     
@@ -81,5 +83,10 @@ h2 {
 * {
     margin-top: 0;
     /* Add other styles here */
+  }
+  .login-form {
+    
+    padding: 20px;
+    border-radius: 5px;
   }
   

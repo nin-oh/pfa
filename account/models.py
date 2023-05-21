@@ -38,7 +38,6 @@ class Account(AbstractBaseUser):
     is_active				= models.BooleanField(default=True)
     is_staff				= models.BooleanField(default=False)
     is_superuser			= models.BooleanField(default=False)
-
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
@@ -47,7 +46,7 @@ class Account(AbstractBaseUser):
     def __str__(self):
        return self.email
 
-	# For checking permissions. to keep it simple all admin have ALL permissons
+	
     def has_perm(self, perm, obj=None):
         return self.is_admin
 

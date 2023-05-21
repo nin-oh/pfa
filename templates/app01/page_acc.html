@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Kids Education Website</title>
-	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'style2.css' %}">
 
 </head>
 <body>
@@ -11,9 +11,14 @@
 		<h1>Kids Education Website</h1>
 		<nav>
 			<ul>
-				
-				<li><a href="#">About</a></li>
-				<li><a href="#">Courses</a></li>
+				{% if request.user.is_authenticated %}
+	 <li>Hello, {{request.user.username}} | <a href="{% url 'logout' %}">Logout</a></li>
+	 <li><a href="{% url 'account' %}">Account</a></li>
+	 {% else %}
+	 <li><a href="{% url 'register' %}">Register</a> | <a href="{% url 'login' %}">Login</a></li>
+	 {% endif %}
+			
+				<li><a href="{% url 'cours' %}">Courses</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>

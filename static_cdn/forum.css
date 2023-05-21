@@ -1,0 +1,124 @@
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  form h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+  }
+  
+  form p {
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+  
+ 
+  form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  border: none; /* Remove the border property */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 0 0 1px white; /* Add a box-shadow property with white color */
+}
+  form small {
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid white; /* Add a border */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+  }
+* {
+    background-color: white; /* Add a light gray background color */
+  }
+h2 {
+    background-color: #007bff; /* Add a blue background color */
+    color: white; /* Set the text color to white */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+  }
+* {
+    margin-top: 0;
+    /* Add other styles here */
+  }
+  .login-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+    

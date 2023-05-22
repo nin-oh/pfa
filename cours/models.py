@@ -11,7 +11,11 @@ def upload_location(instance, filename):
 				author_id=str(instance.author.id),title=str(instance.title), filename=filename)
 	return file_path
 
-
+class categories(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=10)
+    def str(self):
+        return f"{self.title}"
 
 class cours(models.Model):
     title 					= models.CharField(max_length=50, null=False, blank=False)
@@ -21,6 +25,7 @@ class cours(models.Model):
     date_updated 			= models.DateTimeField(auto_now=True, verbose_name="date updated")
     author				= models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     slug 					= models.SlugField(blank=True, unique=True)
+    category = models.ForeignKey(categories, on_delete=models.CASCADE)
     def __str__(self):
         return self.title
 

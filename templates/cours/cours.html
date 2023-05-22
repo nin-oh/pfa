@@ -46,20 +46,24 @@
 			<div class="d-lg-none mb-3">
 				<div class="card m-auto d-flex flex-column p-3">
 					
-					<p class="lead">In this course you'll learn how to build a simple blog with user registration and blog CRUD functionality. Django is a powerful 
-	  					framework and you'll see why in this course.</p>
-					<p class="m-auto"><a class="btn btn-primary" href="{% url 'cours:create' %}">Create cours</a></p>
+					<p class="lead">Bienvenue sur notre site d'éducation, où vous pouvez accéder à une vaste gamme de cours et de ressources pédagogiques pour enrichir vos connaissances et développer vos compétences.</p>
+					{% if user.is_staff %}<p class="m-auto"><a class="btn btn-primary" href="{% url 'cours:create' %}">Create cours</a></p>{% endif %}
 				</div>
 			</div>
 			<!-- end Top 'create post' bar -->
 
 			<!-- Blog posts-->
+			{% if cour_s %}
 			{% for post in cour_s %}
 				<div class="blog-post-container">
 					{% include 'cours/snippet.html' with cour_s=post %}
 				</div>
-				<p> afficher </p>
 			{% endfor %}
+			{% else %}
+				<div class="blog-post-container">
+					{% include 'cours/snippet.html' with query=query %}
+				</div>
+			{% endif %}
 			<!-- End Blog posts-->
 		</div>
 		<!-- end blog feed -->
@@ -70,9 +74,8 @@
 
 			<div class="card create-post-bar d-flex flex-column p-3">
 				
-				<p class="lead">In this course you'll learn how to build a simple blog with user registration and blog CRUD functionality. Django is a powerful 
-  					framework and you'll see why in this course.</p>
-				<p class="m-auto"><a class="btn btn-primary" href="{% url 'cours:create' %}">Create cours</a></p>
+				<p class="lead">Bienvenue sur notre site d'éducation, où vous pouvez accéder à une vaste gamme de cours et de ressources pédagogiques pour enrichir vos connaissances et développer vos compétences.</p>
+				{% if user.is_staff %}<p class="m-auto"><a class="btn btn-primary" href="{% url 'cours:create' %}">Create cours</a></p>{% endif %}
 			</div>
 		
 		</div>

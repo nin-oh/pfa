@@ -12,11 +12,10 @@ def upload_location(instance, filename):
 	return file_path
 
 
-    
 
 class cours(models.Model):
     title 					= models.CharField(max_length=50, null=False, blank=False)
-    body 					= models.TextField(max_length=500, null=False, blank=False)
+    body 					= models.TextField(max_length=10000, null=False, blank=False)
     image		 			= models.ImageField(upload_to=upload_location, null=True, blank=True)
     date_published 			= models.DateTimeField(auto_now_add=True, verbose_name="date published")
     date_updated 			= models.DateTimeField(auto_now=True, verbose_name="date updated")

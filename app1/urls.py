@@ -20,7 +20,7 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 from cours.views import (
-   cours ,
+   home_screen_view ,
 )
 from account.views import (
     registration_view,
@@ -39,7 +39,7 @@ urlpatterns = [
     path('logout/',logout_view, name="logout"),
     path('login/',login_view, name="login"),
     path('account/', account_view, name="account"),
-    path('cours/', cours, name="cours"),
+    path('cours/', home_screen_view, name="cours"),
     path('must_authenticate/', must_authenticate_view, name="must_authenticate"),
      path('password_change/done/', auth_views.PasswordChangeDoneView.as_view(template_name='registration/password_change_done.html'), 
         name='password_change_complete'),

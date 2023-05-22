@@ -1,12 +1,13 @@
 <style type="text/css">
 	.card{
 		max-width: 700px;
+		width: 100%;
 	}
 	.card-body{
 		padding: 20px;
 	}
 </style>
-
+{% if cour_s %}
 <div class="container">
 	<div class="row">
 
@@ -29,3 +30,17 @@
 		</div>
 	</div>
 </div>
+{% else %}
+
+<div class="container">
+	<div class="row">
+		<div class="card m-auto">
+			<div class="card-body mt-2 mb-2">
+				<h2 class="card-title">No results</h2>
+				<p class="card-text">There were no results matching the search: "{{query}}"</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endif %}

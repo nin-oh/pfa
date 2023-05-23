@@ -47,6 +47,9 @@ def detail_cours_view(request, slug):
 def home_screen_view(request):
 	
     context = {}
+    user = request.user
+    if not user.is_authenticated:
+        return redirect('must_authenticate')
     query = ""
     if request.GET:
         query = request.GET['q']

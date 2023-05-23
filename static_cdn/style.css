@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	background-color: blue;
+	background-color: rgb(53, 42, 211);
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -17,16 +17,16 @@ header {
 	padding: 20px;
 }
 
-nav ul {
+nav {
 	display: flex;
 	list-style: none;
 }
 
-nav li {
-	margin-right: 20px;
+nav {
+	margin-right: 50px;
 }
 
-nav li:last-child {
+nav {
 	margin-right: 0;
 }
 
@@ -44,27 +44,7 @@ nav a {
 	padding: 100px 20px;
 }
 
-.features {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 100px 20px;
-	background-color: #f2f2f2;
-}
 
-.features li {
-	max-width: 300px;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.features h3 {
-	margin-top: 20px;
-}
-
-.features p {
-	margin-top: 10px;
-}
 
 .cta {
 	display: inline-block;
@@ -75,3 +55,31 @@ nav a {
 	border-radius: 5px;
 	text-decoration: none;
 }
+
+
+/* Add this CSS to your style2.css file */
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .feature {
+	text-align: center;
+	margin: 20px;
+  }
+  
+  .feature img {
+	width: 300px;
+	height: 200px;
+  }
+  
+  .feature h3 {
+	margin-top: 10px;
+  }
+  
+  .feature p {
+	margin-bottom: 20px;
+  }
+  
